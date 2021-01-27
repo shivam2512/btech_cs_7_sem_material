@@ -136,8 +136,30 @@
     </div>
 <br>
  <div><center><b>Last Updated: 27/01/2021, 03:25:00 PM</b></center></div>
- <p><div style="text-align:center;"><script type="text/javascript" src="http://services.webestools.com/cpt_visitors/68701-10-4.js"></script></div><a href="http://www.webestools.com/" style="display:block;text-align:center;" title="Tools services webmasters counters generators scripts tutorials free"></a></p>               
-<!--    <div class="panel panel-default">
+
+                <div id="CounterVisitor">
+</div>
+
+<script>
+var n = localStorage.getItem('on_load_counter');
+
+if (n === null) {
+  n = 0;
+}
+n++;
+
+localStorage.setItem("on_load_counter", n);
+
+nums = n.toString().split('').map(Number);
+document.getElementById('CounterVisitor').innerHTML = '';
+for (var i of nums) {
+  document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+}
+
+</script>
+
+                
+                <!--    <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
         <strong>&nbsp;4</strong><span style="font-size: 9pt; font-family: Verdana">.</span>
